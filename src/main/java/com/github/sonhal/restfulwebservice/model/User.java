@@ -1,7 +1,5 @@
 package com.github.sonhal.restfulwebservice.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.util.Date;
