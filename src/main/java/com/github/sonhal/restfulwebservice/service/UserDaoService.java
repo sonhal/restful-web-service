@@ -4,15 +4,20 @@ package com.github.sonhal.restfulwebservice.service;
 import com.github.sonhal.restfulwebservice.model.User;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Service
 public class UserDaoService {
 
-    private List<User> users = List.of(
-            new User(1, "Sondre", new Date()),
-            new User(2, "Mike", new Date()));
+    private static List<User> users = new ArrayList<>();
+
+    static {
+        users.add(new User(1, "Sondre", new Date()));
+        users.add(new User(2, "Mike", new Date()));
+    }
+
 
     private int userCount = 2;
 

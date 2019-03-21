@@ -1,5 +1,7 @@
 package com.github.sonhal.restfulwebservice.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 
 public class User {
